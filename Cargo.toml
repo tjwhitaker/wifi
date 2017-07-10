@@ -1,14 +1,13 @@
 [package]
 name = "wifi"
+version = "0.0.0"
+authors = ["Tim Whitaker <camp4climber@gmail.com>"]
 description = "Library for getting wifi information"
-version = "0.1.0"
 
-documentation = ""
 repository = "https://github.com/camp4climber/wifi"
 homepage = "https://github.com/camp4climber/wifi"
 license = "MIT"
 readme = "README.md"
-authors = ["Tim Whitaker <camp4climber@gmail.com>"]
 
 [dependencies]
 os_type = "1.0.0"
