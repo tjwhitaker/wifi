@@ -1,0 +1,6 @@
+[package]
+name = "wifi"
+version = "0.1.0"
+authors = ["Tim Whitaker <camp4climber@gmail.com>"]
+
+[dependencies]
