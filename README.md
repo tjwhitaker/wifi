@@ -32,6 +32,7 @@ todo
 ---
 
 - [ ] error handling
+- [ ] write tests
 - [ ] detect operating system
 - [ ] scan networks
 - [ ] linux support
