@@ -25,6 +25,7 @@ use wifi::scanner;
 
 fn main() {
   let network_info = scanner::get_info();
+  println!("{:?}", network_info);
 }
 ```
 
@@ -37,3 +38,4 @@ todo
 - [ ] scan networks
 - [ ] linux support
 - [ ] windows support
+
