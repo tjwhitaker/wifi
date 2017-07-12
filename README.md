@@ -32,8 +32,9 @@ fn main() {
 todo
 ---
 
+- [ ] documentation
 - [ ] error handling
-- [ ] write tests
+- [ ] tests
 - [ ] detect operating system
 - [ ] scan networks
 - [ ] linux support
