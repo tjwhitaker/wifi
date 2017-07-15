@@ -2,7 +2,7 @@ use std::collections::HashMap;
 use std::process::Command;
 use scanner::Network;
 
-pub fn get_info() -> Network {
+pub fn get_current_network() -> Network {
     let output = Command::new("airport")
                          .arg("info")
                          .output()
@@ -20,7 +20,7 @@ fn parse_info(string: String) -> Network {
         hash.insert(split[0], split[1].trim());
     }
 
-    let current_network = Network {
+    Network {
         agr_ctl_rssi: hash.get("agrCtlRSSI").unwrap().parse::<i32>().unwrap(),
         agr_ext_rssi: hash.get("agrExtRSSI").unwrap().parse::<i32>().unwrap(),
         agr_ctl_noise: hash.get("agrCtlNoise").unwrap().parse::<i32>().unwrap(),
@@ -36,7 +36,5 @@ fn parse_info(string: String) -> Network {
         ssid: hash.get("SSID").unwrap().to_string(),
         mcs: hash.get("MCS").unwrap().parse::<i32>().unwrap(),
         channel: hash.get("channel").unwrap().to_string(),
-    };
-
-    current_network
+    }
 }

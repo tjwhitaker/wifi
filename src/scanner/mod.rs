@@ -1,3 +1,5 @@
+extern crate os;
+
 mod osx;
 mod linux;
 mod windows;
@@ -21,6 +23,12 @@ pub struct Network {
     pub channel: String,
 }
 
-pub fn get_info() -> Network {
-    osx::get_info()
+pub fn get_current_network() -> Option<Network> {
+    let os_info = os::get_info();
+
+    match os_info.kernel_name {
+        "Darwin" => Some(osx::get_current_network()),
+        "Linux"  => Some(linux::get_current_network()),
+        _        => None,
+    }
 }
