@@ -4,8 +4,8 @@ version = "0.1.0"
 authors = ["Tim Whitaker <camp4climber@gmail.com>"]
 description = "Library for getting wifi information"
 
-repository = "https://github.com/camp4climber/wifi"
-homepage = "https://github.com/camp4climber/wifi"
+repository = "https://github.com/archdaemon/wifi"
+homepage = "https://github.com/archdaemon/wifi"
 license = "MIT"
 readme = "README.md"
 
